@@ -75,6 +75,8 @@ map <leader>s :set ignorecase! \| set smartcase<CR>
 map <leader>w :w<CR>
 
 map <leader>q :q<CR>
+
+nnoremap <leader>W :CtrlSF
 " ===== Custom Settings =======
 
 "nnoremap <silent> <Leader>[ :exe "resize " . (winheight(0) * 3/2)<CR>
