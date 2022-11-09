@@ -109,6 +109,8 @@ alias ivim="nvim ~/.config/nvim/init.vim"
 alias doc="cd ~/Documents"
 alias python=/usr/bin/python3
 alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
+alias ls="lsd"
+alias n~='cd ~ && nvim'
 
 eval "$(nodenv init -)"
 # heroku autocomplete setup
