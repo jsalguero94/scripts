@@ -133,11 +133,18 @@ let g:ale_lint_on_save = 1
 let g:ale_set_loclist = 1 " location list
 let g:airline#extensions#ale#enabled = 1 " show errors or warnings in my statusline
 let g:ale_sign_column_always = 1 " keep the sign gutter open all times
+let g:ale_php_langserver_executable = expand('~/.config/composer/vendor/bin/php-language-server.php') " only works for php 7
+" let g:ale_php_phan_executable = expand('~/bin/phan_client_auto')
+let g:ale_php_phan_use_client = 1
+" composer global require felixfbecker/language-server jetbrains/phpstorm-stubs:@dev
+" composer global run-script --working-dir ~/.config/composer/vendor/felixfbecker/language-server parse-stubs
+" composer global require phan/phan
 
 let g:ale_linters = {
 \ 'ruby': ['rubocop', 'ruby'],
 \ 'javascript': ['eslint'],
-\ 'vue': ['eslint']
+\ 'vue': ['eslint'],
+\ 'php': ['php', 'langserver', 'phan']
 \}
 
 " let g:ale_linters = {'ruby': ['ruby']} # in case rubocop pegs the CPU, just do ruby syntax check
