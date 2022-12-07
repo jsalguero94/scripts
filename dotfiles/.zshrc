@@ -111,6 +111,7 @@ alias python=/usr/bin/python3
 alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
 alias ls="lsd"
 alias n~='cd ~ && nvim'
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 
 eval "$(nodenv init -)"
 # heroku autocomplete setup
